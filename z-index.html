@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-INDEX</title>
+    <style>
+      .box {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+        border: 2px solid black;
+        position: relative;
+      }
+
+      #red,
+      #blue,
+      #green {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+      }
+
+      #red {
+        background-color: red;
+        left: 75px;
+        z-index: 1;
+      }
+
+      #blue {
+        background-color: blue;
+        top: 25px;
+        left: 25px;
+        /* avendo lo z-index più alto, blue finirà DAVANTI agli altri quadrati,
+        nonostante non sia l'ultimo div presente nell'HTML (che in teoria dovrebbe
+        avere la precedenza nel rendering) */
+        z-index: 2;
+      }
+
+      #green {
+        background-color: green;
+        top: 50px;
+        left: 50px;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Z-INDEX</h2>
+      <p>
+        z-index è una proprietà che determina l'ordine di rendering degli
+        elementi da parte del browser
+      </p>
+      <div class="box">
+        <div id="red"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+      </div>
+    </div>
+  </body>
+</html>

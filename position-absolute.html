@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: absolute</title>
+    <style>
+      .absolute {
+        position: absolute;
+        /* anche con position: absolute è possibile utilizzare top, bottom, left e right */
+        top: 0;
+        right: 0;
+        /* normalmente, un elemento con position: absolute prende come RIFERIMENTO la pagina stessa */
+      }
+
+      .relative {
+        position: relative;
+        border: 3px solid green;
+        width: 300px;
+        height: 300px;
+        left: 50px;
+      }
+
+      .absolute_1,
+      .absolute_2 {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+
+      .absolute_1 {
+        border: 1px solid blue;
+        top: 0;
+        left: 0;
+      }
+
+      .absolute_2 {
+        border: 1px solid palevioletred;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>POSITION: ABSOLUTE</h2>
+      <p>
+        Un elemento con position: absolute viene completamente rimosso dal
+        normale flow della pagina.
+      </p>
+      <div class="absolute">
+        Questo div è posizionato con position: absolute.
+      </div>
+      <p>
+        Un elemento con position: absolute viene completamente rimosso dal
+        normale flow della pagina.
+      </p>
+    </div>
+    <div class="relative">
+      <div class="absolute_1">position: absolute</div>
+      <div class="absolute_2">position: absolute</div>
+    </div>
+    <!-- Abbiamo imparato che position: absolute cercherà di posizionarsi relativamente al più vicino contenitore
+    dotato di position: relative o in generale di un qualsiasi posizionamento esplicito, diverso da "static".
+    In mancanza di un contenitore posizionato esplicitamente, prenderà come riferimento la pagina stessa. -->
+  </body>
+</html>

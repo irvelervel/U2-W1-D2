@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio su FLOAT</title>
+    <style>
+      /* CSS */
+
+      body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        border: 1px solid black;
+        /* con max-width il nostro contenitore diventa fully responsive, non eccedendo su schermi molto grandi */
+        max-width: 1200px;
+        margin: 0 auto;
+        /* scorciatoia per: */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+      }
+
+      header {
+        background-color: navy;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        color: white;
+      }
+
+      nav {
+        background-color: lightblue;
+      }
+
+      nav ul {
+        margin: 0;
+        padding: 5px 0;
+        list-style-type: none;
+      }
+
+      aside#left {
+        float: left;
+        margin-right: 10px;
+      }
+
+      aside#left img,
+      aside#right img {
+        width: 300px;
+      }
+
+      aside#right {
+        float: right;
+      }
+
+      footer {
+        background-color: purple;
+        color: white;
+        text-align: center;
+        /* con la proprietà CLEAR "pulisco" il float e ripristino il normale flow della pagina */
+        clear: both;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      @media screen and (min-width: 769px) {
+        /* per schermi da tablet in su */
+        nav ul li {
+          display: inline;
+          margin: 0 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>EPICODE</h1>
+        <nav>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>ANGULAR</li>
+            <li>REACT</li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <aside id="left">
+          <img src="https://placekitten.com/500" alt="kitten" />
+        </aside>
+
+        <aside id="right">
+          <img src="https://placekitten.com/500" alt="kitten" />
+        </aside>
+
+        <!-- se vogliamo "incastrare" del contenuto all'interno di DUE elementi con float,
+        è importante ricordare che dobbiamo fisicamente nell'HTML spostare gli elementi CON float
+        prima degli elementi senza float -->
+
+        <section>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat
+            officia incidunt at eum, neque qui dignissimos nemo dolorem dolor
+            fugit. Amet nostrum illo et totam similique autem eligendi voluptate
+            fugiat. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Placeat officia incidunt at eum, neque qui dignissimos nemo dolorem
+            dolor fugit. Amet nostrum illo et totam similique autem eligendi
+            voluptate fugiat.
+          </p>
+        </section>
+
+        <footer>
+          <p>EPICODE</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

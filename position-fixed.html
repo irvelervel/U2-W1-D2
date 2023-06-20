@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position: fixed</title>
+    <style>
+      body {
+        margin: 0 0 50px 0;
+        /* questo margin bottom serve ad evitare che la sezione con fixed vada a sovrapporsi
+        a del contenuto esistente */
+      }
+
+      button {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        background-color: blue;
+        color: white;
+      }
+
+      .fixed {
+        position: fixed;
+        /* applicando position: fixed riduciamo la larghezza dell'elemento al suo contenuto, anche se
+        l'elemento era di tipo blocco */
+        width: 100%;
+        text-align: center;
+        background-color: lightblue;
+        padding: 10px 0;
+        /* utilizziamo top, bottom, left e right per posizionare l'elemento in modo FISSO, relativamente
+        al viewport (l'area visibile) */
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>POSITION: FIXED</h2>
+      <p>
+        Un elemento con position: fixed è posizionato relativamente al viewport,
+        l'area di visualizzazione; questo significa che il suo posizionamento
+        NON verrà condizionato dallo scroll della pagina. Useremo sempre top,
+        bottom, left e right per posizionarlo.
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, enim
+        labore. Vero quas iste ut, quae in ducimus. Rem, amet nesciunt dolor
+        commodi ab explicabo facere ipsum aliquam reiciendis animi. Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Laudantium nihil rerum
+        numquam delectus amet, architecto ex maxime magnam culpa blanditiis
+        corporis nemo pariatur saepe praesentium eaque nulla in neque veniam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quo neque,
+        aspernatur fuga ipsum, recusandae tempore natus aliquid consequatur
+        voluptatibus iure sed exercitationem! Perferendis, quaerat vero! Impedit
+        dolorum ipsum sunt. Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Maxime excepturi ratione reprehenderit ut veniam cumque ipsa
+        facilis dicta earum omnis quam repellat aperiam, voluptatibus
+        repudiandae autem. Iusto facilis nam perspiciatis? Lorem ipsum, dolor
+        sit amet consectetur adipisicing elit. Facere, enim labore. Vero quas
+        iste ut, quae in ducimus. Rem, amet nesciunt dolor commodi ab explicabo
+        facere ipsum aliquam reiciendis animi. Lorem ipsum, dolor sit amet
+        consectetur adipisicing elit. Laudantium nihil rerum numquam delectus
+        amet, architecto ex maxime magnam culpa blanditiis corporis nemo
+        pariatur saepe praesentium eaque nulla in neque veniam. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Ut quo neque, aspernatur
+        fuga ipsum, recusandae tempore natus aliquid consequatur voluptatibus
+        iure sed exercitationem! Perferendis, quaerat vero! Impedit dolorum
+        ipsum sunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Maxime excepturi ratione reprehenderit ut veniam cumque ipsa facilis
+        dicta earum omnis quam repellat aperiam, voluptatibus repudiandae autem.
+        Iusto facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo nequeUt quo neque Ut quo neque
+        Ut quo neque, aspernatur fuga ipsum, recusandae tempore natus aliquid
+        consequatur voluptatibus iure sed exercitationem! Perferendis, quaerat
+        vero! Impedit dolorum ipsum sunt. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Maxime excepturi ratione reprehenderit ut
+        veniam cumque ipsa facilis dicta earum omnis quam repellat aperiam,
+        voluptatibus repudiandae autem. Iusto facilis nam perspiciatis? Lorem
+        ipsum, dolor sit amet consectetur adipisicing elit. Facere, enim labore.
+        Vero quas iste ut, quae in ducimus. Rem, amet nesciunt dolor commodi ab
+        explicabo facere ipsum aliquam reiciendis animi. Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Laudantium nihil rerum numquam
+        delectus amet, architecto ex maxime magnam culpa blanditiis corporis
+        nemo pariatur saepe praesentium eaque nulla in neque veniam. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Ut quo neque, aspernatur
+        fuga ipsum, recusandae tempore natus aliquid consequatur voluptatibus
+        iure sed exercitationem! Perferendis, quaerat vero! Impedit dolorum
+        ipsum sunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Maxime excepturi ratione reprehenderit ut veniam cumque ipsa facilis
+        dicta earum omnis quam repellat aperiam, voluptatibus repudiandae autem.
+        Iusto facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis? Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Facere, enim labore. Vero quas iste ut, quae in
+        ducimus. Rem, amet nesciunt dolor commodi ab explicabo facere ipsum
+        aliquam reiciendis animi. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Laudantium nihil rerum numquam delectus amet,
+        architecto ex maxime magnam culpa blanditiis corporis nemo pariatur
+        saepe praesentium eaque nulla in neque veniam. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Ut quo neque, aspernatur fuga ipsum,
+        recusandae tempore natus aliquid consequatur voluptatibus iure sed
+        exercitationem! Perferendis, quaerat vero! Impedit dolorum ipsum sunt.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime
+        excepturi ratione reprehenderit ut veniam cumque ipsa facilis dicta
+        earum omnis quam repellat aperiam, voluptatibus repudiandae autem. Iusto
+        facilis nam perspiciatis?
+      </p>
+      <div class="fixed">
+        <button>BUTTON</button>
+        <button>BUTTON</button>
+        <button>BUTTON</button>
+        <button>BUTTON</button>
+      </div>
+    </div>
+  </body>
+</html>
